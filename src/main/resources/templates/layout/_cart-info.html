@@ -1,0 +1,10 @@
+<div xmlns:th="http://www.thymeleaf.org">
+  <div class="panel panel-primary">
+      <div class="panel-body text-center">
+        <i class="glyphicon glyphicon-shopping-cart" 
+        style="font-size: 25px; color: orangered;" ></i>
+        <a th:href="@{/cart/view}">{{cart.count}} Items->Total:${{cart.amount|number:2}}</a>
+      <!--  cart lấy từ scope.cart trong shopping-cart-app.js -->
+      </div>
+  </div>
+</div>
